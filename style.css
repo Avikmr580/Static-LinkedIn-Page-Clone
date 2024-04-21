@@ -1,0 +1,843 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(235, 235, 235);
+}
+nav .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.3rem 4rem;
+  background: #fff;
+}
+nav .box .left-side,
+nav .box .right-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+nav .box .left-side {
+  padding-left: 3rem;
+  display: flex;
+  gap: 0.7rem;
+}
+nav .box .logo i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #0a66c2;
+}
+
+nav .box .left-side .input {
+  background: rgb(237, 245, 246);
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.2rem;
+}
+nav .box .left-side .input input[type="search"] {
+  width: 15rem;
+  border: none;
+  background: transparent;
+}
+nav .box .left-side .input input[type="search"]::placeholder {
+  font-size: 0.8rem;
+  color: rgb(49, 49, 49);
+  font-weight: 100;
+}
+nav .box .left-side .input i {
+  font-size: 0.8rem;
+  color: gray;
+}
+nav .box .right-side .home,
+nav .box .right-side .network,
+nav .box .right-side .jobs,
+nav .box .right-side .message,
+nav .box .right-side .notification,
+nav .box .right-side .me,
+nav .box .right-side .business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+nav .box .right-side .business {
+  border-left: 1px solid rgb(208, 207, 207);
+}
+
+nav .box .right-side .home,
+nav .box .right-side .network:hover,
+nav .box .right-side .jobs:hover,
+nav .box .right-side .message:hover,
+nav .box .right-side .notification:hover,
+nav .box .right-side .me .down:hover,
+nav .box .right-side .business .down:hover {
+  color: #000;
+}
+
+nav .box .right-side .network,
+nav .box .right-side .jobs,
+nav .box .right-side .message,
+nav .box .right-side .notification,
+nav .box .right-side .business {
+  color: gray;
+}
+
+nav .box .right-side .home i,
+nav .box .right-side .network i,
+nav .box .right-side .jobs i,
+nav .box .right-side .message i,
+nav .box .right-side .notification i {
+  font-size: 1.2rem;
+}
+nav .box .right-side .me .down,
+nav .box .right-side .business .down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: gray;
+}
+nav .box .right-side .me img:first-child {
+  background: gray;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+.box a:hover {
+  text-decoration: underline;
+}
+
+/*================================== Navbar End Here =========================================== */
+
+/*================================== Left panel =========================================== */
+
+.container2 {
+  display: grid;
+  grid-template-columns: 20% 52% 28%;
+  gap: 2rem;
+  width: 85%;
+  margin: 1.8rem auto;
+}
+
+aside .left-panel {
+  background-color: #fff;
+  width: 100%;
+  height: 51vh;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.left-panel .top {
+  width: 100%;
+  height: 8vh;
+  background-image: url(./Image/background.jpg);
+  position: absolute;
+}
+
+.left-panel img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  top: 3%;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 2px solid #fff;
+}
+
+aside .left-panel .profile-name {
+  position: relative;
+  text-align: center;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.left-panel .profile-name a {
+  text-decoration: none;
+}
+
+.left-panel .profile-name a:hover {
+  text-decoration: underline;
+}
+
+.left-panel .profile-name small {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.left-panel .view {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 6%;
+}
+
+.left-panel .view .views {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+#grow {
+  font-weight: 100;
+  margin-left: 0.5rem;
+}
+
+#grow:hover {
+  background-color: rgb(188, 186, 186);
+}
+
+.left-panel .view .views:hover {
+  background-color: rgb(188, 186, 186);
+}
+
+.left-panel .view .views h6 {
+  color: gray;
+  font-weight: 100;
+}
+.left-panel .view .views a {
+  color: rgb(39, 39, 219);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+hr#view {
+  margin: 0.5rem o;
+}
+
+.left-panel .premium {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 6%;
+}
+
+.left-panel .premium h6 {
+  color: gray;
+  font-weight: 100;
+  margin-left: 0.8rem;
+}
+
+.left-panel .premium a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.left-panel .premium a i {
+  color: rgb(211, 211, 33);
+}
+
+hr#premium,
+hr#view,
+hr#left-panel {
+  margin: 0.5rem 0;
+}
+
+.items {
+  position: relative;
+  top: 7%;
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  color: rgb(84, 83, 83);
+  cursor: pointer;
+}
+
+aside .recent-job {
+  background-color: #fff;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 78vh;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+aside .recent-job .recent {
+  margin: 1rem;
+}
+
+aside .recent-job .recent h6 {
+  font-weight: 100;
+}
+
+aside .recent-job .recent .one {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+  gap: 0.5rem;
+  color: rgb(83, 83, 83);
+}
+
+aside .recent-job .recent .one i {
+  font-size: 0.8rem;
+}
+
+aside .recent-job .groups {
+  margin: 2rem 0 0 1rem;
+}
+
+aside .recent-job .groups h5 {
+  color: #0a66c2;
+  font-size: 0.7rem;
+}
+
+aside .recent-job .groups .two {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+  gap: 0.5rem;
+  color: rgb(83, 83, 83);
+}
+
+aside .show {
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+aside .event {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1rem 0 1rem;
+}
+
+aside .event h6 {
+  color: #0a66c2;
+  font-size: 0.7rem;
+}
+
+aside .event h6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+aside .event i {
+  color: gray;
+}
+
+.discover {
+  text-align: center;
+  margin: 2rem 0 0 0;
+  border-top: 1px solid rgb(144, 144, 144);
+  padding-top: 1rem;
+}
+
+.discover a {
+  text-decoration: none;
+  color: gray;
+}
+
+aside .follow {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1rem 0 1rem;
+}
+
+aside .follow h6 {
+  color: #0a66c2;
+  font-size: 0.7rem;
+}
+
+aside .follow h6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*================================== Left panel End Here =========================================== */
+
+/*================================== Middle Panel =========================================== */
+
+main .middle-panel {
+  background: #fff;
+  height: 23vh;
+  margin-top: 1rem;
+  border-radius: 0.8rem;
+}
+
+main .middle-panel .search {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+main .middle-panel .search img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main .middle-panel .search input {
+  border-radius: 5rem;
+  border: 1px solid gray;
+  width: 100%;
+  padding: 0 1.2rem;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+main .middle-panel .search input:hover {
+  background: rgb(233, 233, 233);
+}
+
+main .middle-panel .posts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.6rem 2rem;
+}
+
+main .middle-panel .posts .post {
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 0.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+main .middle-panel .posts .post:nth-child(1) i {
+  color: #0a66c2;
+}
+
+main .middle-panel .posts .post:nth-child(2) i {
+  color: #19c20a;
+}
+
+main .middle-panel .posts .post:nth-child(3) i {
+  color: #3187dd;
+}
+
+main .middle-panel .posts .post:nth-child(4) i {
+  color: #c20ab9;
+}
+
+main .middle-panel .posts .post:hover {
+  background: rgb(235, 235, 235);
+  border-radius: 0.2rem;
+}
+
+main .middle-panel .post1 {
+  background: #fff;
+  height: 15vh;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+main .middle-panel .dot {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 0.8rem;
+}
+
+main .middle-panel .follower {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.3rem;
+  width: 50%;
+}
+
+main .middle-panel .follower h6 {
+  color: gray;
+  margin-top: 0.2rem;
+}
+
+main .middle-panel .follower h5:hover {
+  text-decoration: underline;
+}
+
+main .middle-panel .follower h6 {
+  cursor: pointer;
+}
+
+main .middle-panel .review {
+  background: #fff;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+}
+
+main .middle-panel .review svg {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.comment {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin-top: 0.6rem;
+}
+
+main .review .comment h5:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+main .review .comment h5 {
+  color: gray;
+}
+
+hr#review {
+  color: gray;
+}
+
+main .middle-panel .likes {
+  background: #fff;
+  height: 6vh;
+  width: 100%;
+}
+
+main .middle-panel .likes {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .middle-panel .likes .like {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem 0.5rem;
+  cursor: pointer;
+}
+
+main .middle-panel .likes .like:hover {
+  background: rgb(235, 235, 235);
+  border-radius: 0.2rem;
+}
+
+main .middle-panel .likes .like i,
+main .middle-panel .likes .like h5 {
+  color: gray;
+}
+
+main .middle-panel .post2 {
+  background: #fff;
+  height: 18vh;
+  width: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.status {
+  background-color: #fff;
+  margin-top: 0;
+  width: 100%;
+  height: 10vh;
+}
+
+main .middle-panel .post2 img {
+  height: 100px;
+  width: 100px;
+}
+
+main .middle-panel .follower1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  width: 50%;
+}
+
+main .middle-panel .post2 .dot1 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 0.8rem;
+}
+
+main .middle-panel .follower1 h6 {
+  color: gray;
+  margin-top: 0.2rem;
+}
+
+main .middle-panel .follower1 h5:hover {
+  text-decoration: underline;
+}
+
+main .middle-panel .follower1 h6 {
+  cursor: pointer;
+}
+
+main .middle-panel .review1 {
+  background: #fff;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+}
+
+main .middle-panel .review1 svg {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.comment1 {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin-top: 0.6rem;
+}
+
+main .review1 .comment1 h5:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+main .review1 .comment1 h5 {
+  color: gray;
+}
+
+hr#review1 {
+  color: gray;
+}
+
+main .middle-panel .likes1 {
+  background: #fff;
+  height: 6vh;
+  width: 100%;
+}
+
+main .middle-panel .likes1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .middle-panel .likes1 .like1 {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem 0.5rem;
+  cursor: pointer;
+}
+
+main .middle-panel .likes1 .like1:hover {
+  background: rgb(235, 235, 235);
+  border-radius: 0.2rem;
+}
+
+main .middle-panel .likes1 .like1 i,
+main .middle-panel .likes1 .like1 h5 {
+  color: gray;
+}
+
+/*================================== Middle Panel End Here =========================================== */
+
+/*================================== Right Panel =========================================== */
+
+.right {
+  background: #fff;
+  border-radius: 0.8rem;
+  height: 55vh;
+}
+
+
+.right .right-panel1 .news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.right .right-panel1 .news h4 {
+  font-weight: 400;
+}
+
+.right .right-panel1 .letest-news {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.right .right-panel1 .letest-news:hover {
+  background: rgb(231, 231, 231);
+}
+
+.right .right-panel1 .letest-news .one {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.right .right-panel1 .letest-news .one h5 {
+  font-weight: 500;
+}
+
+.right .right-panel1 .letest-news .one i {
+  font-size: 0.5rem;
+  color: gray;
+}
+
+.right .right-panel1 .letest-news .two {
+  margin: 0 2rem;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.right .right-panel1 .show-more {
+  display: flex;
+  gap: 0.5rem;
+  color: gray;
+  align-items: center;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.right .right-panel1 .show-more h5 {
+  font-weight: 400;
+}
+
+.right .right-panel2 {
+  background: #fff;
+  border-radius: 0.8rem;
+  height: 22vh;
+  gap: 1rem;
+  position: relative;
+  top: 0.6rem;
+}
+
+.right .right-panel2 .news1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.right .right-panel2 .news1 h4 {
+  font-weight: 400;
+}
+
+.right .right-panel2 .letest-news {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.right .right-panel2 .letest-news:hover {
+  background: rgb(231, 231, 231);
+}
+
+.right .right-panel2 .letest-news .one {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.right .right-panel2 .latest-news .one h5 {
+  font-weight: 500;
+  color: gray;
+}
+
+.right .right-panel2 .letest-news .one i {
+  font-size: 0.5rem;
+  color: gray;
+}
+
+.right .right-panel2 .letest-news .two {
+  margin: 0 2rem;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.right .right-panel3 {
+  background: #fff;
+  border-radius: 0.8rem;
+  height: 58vh;
+  gap: 1rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+.right .right-panel3 .feed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.right .right-panel3 .feed h4 {
+  font-weight: 400;
+}
+
+.right .img {
+  display: flex;
+  width: 60px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.right-panel3 .data {
+  width: 230px;
+  height: 6rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+
+#photo {
+  display: flex;
+}
+
+.data input {
+  margin: 0.2rem 0 0 0.2rem;
+  height: 3rem;
+  border-radius: 12px;
+  border: 1px solid black;
+  text-align: center
+}
+
+.data .input::placeholder {
+    font-weight:bolder;
+    color: black;
+}
+
+.data h5 {
+  color: gray;
+  cursor: pointer;
+}
+
+.data .input:hover {
+  background: rgb(235, 235, 235);
+}
